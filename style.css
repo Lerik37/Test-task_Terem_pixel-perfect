@@ -77,7 +77,7 @@ input::placeholder {
   background: #d84949;
 }
 /* ----------Блок HEADER------------------------------------------------------------ */
-.header{
+.header {
   padding: 28px 0 0 0;
 }
 .header__title {
@@ -115,7 +115,7 @@ input::placeholder {
   min-width: 446px;
   height: 44px;
 }
-.form__input:not(:last-child){
+.form__input:not(:last-child) {
   margin-bottom: 22px;
 }
 .form__button {
@@ -154,11 +154,11 @@ input::placeholder {
 .select__wrapper:not(:last-child) {
   margin-bottom: 22px;
 }
-.select__wrapper{
+.select__wrapper {
   position: relative;
 }
-.select__wrapper::after{
-  content: '';
+.select__wrapper::after {
+  content: "";
   position: absolute;
   top: 15px;
   right: 15px;
