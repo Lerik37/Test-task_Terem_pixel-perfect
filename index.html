@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Test task | Terem</title>
+    <link rel="stylesheet" href="./style.css" />
+    <!-- Подключение шрифтов -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Oswald:400,500&display=swap&subset=cyrillic"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="header__container _container">
+          <h1 class="header__title">
+            регистрация сертификата <q>дом в подарок</q>
+          </h1>
+          <img src="./images/header_picture.jpeg" class="header__img" />
+        </div>
+      </header>
+      <section class="form">
+        <div class="form__container _container">
+          <div class="form__inner">
+            <h1 class="form__title">регистрация сертификата</h1>
+            <p class="form__subtitle">
+              Для регистрации сертификата - введите код сертификата и ваши
+              контактные данные.
+            </p>
+            <form>
+              <input
+                class="form__input"
+                type="text"
+                id="code"
+                name="code"
+                placeholder="Код сертификата"
+                required
+              />
+              <input
+                class="form__input"
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Ваше имя"
+                required
+              />
+              <input
+                class="form__input"
+                type="tel"
+                id="phone"
+                name="phone"
+                placeholder="Ваш телефон"
+                required
+              />
+              <input
+                class="form__input"
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Ваш e-мейл"
+                required
+              />
+              <button class="form__button button">
+                отправить заявку на участие в акции
+              </button>
+              <p class="form__policy">
+                Отправляя форму Вы соглашаетесь с
+                <a href="#">Политикой обработки данных</a>
+              </p>
+            </form>
+          </div>
+        </div>
+      </section>
+      <section class="info">
+        <div class="info__container _container">
+          <div class="info__items">
+            <div class="select__wrapper">
+              <select class="select">
+                <option value="1">что дает сертификат?</option>
+              </select>
+              </div>
+              <div class="select__wrapper">
+              <select class="select">
+                <option value="2">где получить сертификат?</option>
+              </select>
+            </div>
+            </div>
+        </div>
+        </div>
+      </section>
+
+      <section class="contacts">
+        <div class="contacts__container _container">
+          <h1 class="contacts__title">
+            Если остались вопросы по участию в акции
+          </h1>
+          <p class="contacts__subtitle">
+            Оставитьте телефонный номер и наши специалисты свяжутся с Вами через
+            30 секунд.
+          </p>
+          <div class="contacts__form">
+            <form
+              class="contacts__form"
+              method="GET"
+              action=""
+            >
+              <div class="contacts__body">
+                <input
+                  type="text"
+                  id="name"
+                  class="contacts__input contacts__input_name"
+                  name="name"
+                  placeholder="Ваше имя"
+                  required
+                />
+                <input
+                  required
+                  type="tel"
+                  id="phone"
+                  class="contacts__input contacts__input_phone"
+                  name="phone"
+                  pattern="\+7\s?[\(]{0,1}9[0-9]{2}[\)]{0,1}\s?\d{3}[-]{0,1}\d{2}[-]{0,1}\d{2}"
+                  placeholder="+7 ( _ _ _ ) _ _ _  _ _  _ _"
+                />
+                <button class="contacts__button button">
+                  заявка на консультацию
+                </button>
+              </div>
+
+              <div class="contacts__checkbox-wrapper">
+                <input
+                  class="contacts__checkbox-input"
+                  type="checkbox"
+                  id="checkbox-input"
+                />
+                <div class="contacts__checkbox-mark"></div>
+                <label for="checkbox-input" class="contacts__checkbox-label"
+                  >Я принимаю условия Политики обработки данных</label
+                >
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
